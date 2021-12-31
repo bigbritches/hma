@@ -128,6 +128,9 @@ jQuery(document).ready(function($){
 	}
 
 	function setDatePosition(timelineComponents, min) {
+	    
+	    console.log( 'EVENTS LENGTH: ' +  timelineComponents['timelineDates'].length );
+	    
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
 		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
 		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
